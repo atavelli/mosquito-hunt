@@ -69,7 +69,7 @@
   }
   function goHome(){stopCamera();view('home');updateSaved();}
   $('reset-cancel').onclick=()=>$('reset-dialog').close();$('reset-confirm').onclick=()=>{answers={};persist();$('reset-dialog').close();begin(mode);};
-  $('start').onclick=()=>begin('stand');$('demo').onclick=()=>begin('demo');$('back').onclick=goHome;
+  $('start').onclick=()=>begin('stand');$('back').onclick=goHome;
   $('camera-start').onclick=startCamera;$('camera-stop').onclick=stopCamera;
   $('manual-toggle').onclick=()=>{$('manual-form').hidden=!$('manual-form').hidden;if(!$('manual-form').hidden)$('station-code').focus();};
   $('manual-form').onsubmit=e=>{e.preventDefault();const code=$('station-code').value.trim().padStart(2,'0'),s=STATIONS.find(s=>s.code===code);if(!s){$('manual-error').textContent='Inserisci un codice tra 01 e 10.';return;}$('manual-error').textContent='';openStation(s.id);$('station-code').value='';};
