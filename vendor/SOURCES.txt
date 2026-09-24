@@ -1,0 +1,3 @@
+js-aruco2 commit 0491d5d228746411d0e9dd602b98f48636a644ba
+https://github.com/damianofalcioni/js-aruco2
+qrcode-generator 1.4.4 https://github.com/kazuhikoarase/qrcode-generator
