@@ -53,12 +53,12 @@
   {
     "id": 201,
     "code": "06",
-    "name": "Il secchio capovolto",
-    "icon": "bucket",
-    "scene": "Un secchio capovolto, asciutto, senza cavità che raccolgano acqua.",
+    "name": "Il bicchiere di plastica capovolto e asciutto",
+    "icon": "cup",
+    "scene": "Un bicchiere di plastica capovolto e asciutto, senza acqua raccolta nemmeno sul fondo rivolto verso l’alto.",
     "risk": false,
-    "fact": "In questa situazione non c’è acqua in cui le larve possano svilupparsi. Capovolgere i contenitori è una buona abitudine.",
-    "action": "Controlla che anche il fondo non trattenga acqua dopo la pioggia."
+    "fact": "Nelle condizioni descritte il bicchiere non è un potenziale focolaio: è asciutto e non contiene acqua in cui le larve possano svilupparsi.",
+    "action": "Riponilo al coperto e controlla che anche il fondo non trattenga acqua. Se non serve più, smaltiscilo nella raccolta corretta."
   },
   {
     "id": 8,
