@@ -1,6 +1,6 @@
 (() => {
   const $=id=>document.getElementById(id), dictionary=new AR.Dictionary('ARUCO_MIP_36h12');
-  $('station-guide').innerHTML=STATIONS.map(s=>`<tr><td><strong>${s.code}</strong></td><td><strong>${s.name}</strong><br>${s.scene}</td><td>${s.risk?'Potenziale focolaio':'Falso amico'}</td></tr>`).join('');
+  $('station-guide').innerHTML=STATIONS.map(s=>`<tr><td><strong>${s.code}</strong></td><td><strong>${s.name}</strong><br>${s.scene}</td><td>${s.risk?'Sì, è un potenziale focolaio':'No, non lo è'}</td></tr>`).join('');
   $('markers').innerHTML=STATIONS.map(s=>`<article class="marker-card"><div class="marker-brand">MOSQUITO HUNT · TROVA I FOCOLAI</div>${dictionary.generateSVG(s.id)}<h3>STAZIONE ${s.code}</h3><p>Inquadra questo simbolo dall’app.<br>Fotocamera non disponibile? Inserisci il codice ${s.code}.</p></article>`).join('');
   const pdfLink=document.createElement('a');pdfLink.className='button primary';pdfLink.href='output/pdf/mosquito-hunt-marker.pdf';pdfLink.download='mosquito-hunt-marker.pdf';pdfLink.textContent='Scarica PDF dei marker ↓';$('print-markers').before(pdfLink);$('print-markers').textContent='Stampa dal browser ↗';$('print-markers').className='button secondary';
   function print(kind){$('kit').className=`kit print-${kind}`;window.print();}
