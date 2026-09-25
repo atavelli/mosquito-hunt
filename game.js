@@ -1,5 +1,5 @@
 (function(root){
-  const storageKey = 'mosquito-hunt-v2';
+  const storageKey = 'mosquito-hunt-v3';
   function cleanAnswers(input,stations){
     const output={};
     for(const s of stations) if(input && typeof input[s.id]==='boolean') output[s.id]=input[s.id];

@@ -31,18 +31,8 @@
     "action": "Rimuovi le foglie da grondaie e scarichi: se li ostruiscono, possono favorire ristagni."
   },
   {
-    "id": 105,
-    "code": "04",
-    "name": "Il vaso con fiori recisi",
-    "icon": "flowers",
-    "scene": "Un vaso aperto con fiori recisi, lasciato all’aperto con la stessa acqua da diversi giorni.",
-    "risk": true,
-    "fact": "L’acqua del vaso, se accessibile alle zanzare e lasciata ferma, può permettere lo sviluppo delle larve. Anche un contenitore decorativo può diventare un potenziale focolaio.",
-    "action": "Cambia regolarmente l’acqua, almeno una volta alla settimana, e pulisci le pareti interne del vaso."
-  },
-  {
     "id": 138,
-    "code": "05",
+    "code": "04",
     "name": "Il secchio in giardino",
     "icon": "bucket",
     "scene": "Un secchio aperto, lasciato all’aperto con acqua piovana.",
@@ -51,28 +41,8 @@
     "action": "Svuotalo, puliscilo e riponilo capovolto o al coperto."
   },
   {
-    "id": 166,
-    "code": "06",
-    "name": "La ciotola di sabbia",
-    "icon": "sand",
-    "scene": "Una ciotola al coperto, riempita di sabbia completamente asciutta, senza acqua.",
-    "risk": false,
-    "fact": "La sabbia asciutta non offre l’acqua necessaria allo sviluppo delle larve di zanzara. Conta ciò che contiene la ciotola, non soltanto la sua forma.",
-    "action": "Tienila al coperto: se la pioggia vi crea un ristagno, la situazione cambia."
-  },
-  {
-    "id": 201,
-    "code": "07",
-    "name": "Il secchio capovolto",
-    "icon": "bucket",
-    "scene": "Un secchio capovolto, asciutto, senza cavità che raccolgano acqua.",
-    "risk": false,
-    "fact": "In questa situazione non c’è acqua in cui le larve possano svilupparsi. Capovolgere i contenitori è una buona abitudine.",
-    "action": "Controlla che anche il fondo non trattenga acqua dopo la pioggia."
-  },
-  {
     "id": 229,
-    "code": "08",
+    "code": "05",
     "name": "L’annaffiatoio dimenticato",
     "icon": "can",
     "scene": "Un annaffiatoio aperto con acqua ferma da diversi giorni.",
@@ -81,8 +51,18 @@
     "action": "Dopo l’uso svuotalo completamente e conservalo al riparo dalla pioggia."
   },
   {
+    "id": 201,
+    "code": "06",
+    "name": "Il secchio capovolto",
+    "icon": "bucket",
+    "scene": "Un secchio capovolto, asciutto, senza cavità che raccolgano acqua.",
+    "risk": false,
+    "fact": "In questa situazione non c’è acqua in cui le larve possano svilupparsi. Capovolgere i contenitori è una buona abitudine.",
+    "action": "Controlla che anche il fondo non trattenga acqua dopo la pioggia."
+  },
+  {
     "id": 8,
-    "code": "09",
+    "code": "07",
     "name": "Il vaso senza ristagni",
     "icon": "plant",
     "scene": "Una pianta in un vaso drenante, senza sottovaso e senza acqua raccolta.",
@@ -92,7 +72,7 @@
   },
   {
     "id": 61,
-    "code": "10",
+    "code": "08",
     "name": "Il barattolo abbandonato",
     "icon": "jar",
     "scene": "Un barattolo senza coperchio in cui si è raccolta acqua.",
