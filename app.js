@@ -72,7 +72,7 @@
   $('start').onclick=()=>begin('stand');$('back').onclick=goHome;
   $('camera-start').onclick=startCamera;$('camera-stop').onclick=stopCamera;
   $('manual-toggle').onclick=()=>{$('manual-form').hidden=!$('manual-form').hidden;if(!$('manual-form').hidden)$('station-code').focus();};
-  $('manual-form').onsubmit=e=>{e.preventDefault();const code=$('station-code').value.trim().padStart(2,'0'),s=STATIONS.find(s=>s.code===code);if(!s){$('manual-error').textContent='Inserisci un codice tra 01 e 10.';return;}$('manual-error').textContent='';openStation(s.id);$('station-code').value='';};
+  $('manual-form').onsubmit=e=>{e.preventDefault();const code=$('station-code').value.trim().padStart(2,'0'),s=STATIONS.find(s=>s.code===code);if(!s){$('manual-error').textContent='Inserisci un codice tra 01 e 08.';return;}$('manual-error').textContent='';openStation(s.id);$('station-code').value='';};
   $('demo-stations').onclick=e=>{const b=e.target.closest('[data-demo]');if(b)openStation(b.dataset.demo);};
   $('journal-list').onclick=e=>{const b=e.target.closest('[data-review]');if(b&&!b.disabled)openStation(b.dataset.review);};
   document.addEventListener('visibilitychange',()=>{if(document.hidden){stopCamera();}});window.addEventListener('pagehide',stopCamera);updateSaved();
