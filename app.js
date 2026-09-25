@@ -7,7 +7,7 @@
   let detector=null, lastScan=0, stableId=null, stableCount=0, scanCooldown=0;
   const capture=document.createElement('canvas');
   const captureContext=capture.getContext('2d',{willReadFrequently:true});
-  const symbols={plant:'🪴',bucket:'🪣',cup:'<svg viewBox="0 0 64 64" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M21 12h22l9 42H12z" fill="#e9efdf"/><path d="M10 54h44M23 18h18M24 25l-4 22m20-22 4 22"/></svg>',flowers:'💐',can:'💧',jar:'🥫',bottle:'🍶',sand:'🏖️',leaves:'🍂'};
+  const symbols={plant:'🪴',bucket:'🪣',cup:'<svg viewBox="0 0 64 64" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M21 12h22l9 42H12z" fill="#e9efdf"/><path d="M10 54h44M23 18h18M24 25l-4 22m20-22 4 22"/></svg>',flowers:'💐',watercup:'<svg viewBox="0 0 64 64" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M14 23h36l-7 31H21z" fill="#87bec0" stroke="none"/><path d="M12 10h40l-9 44H21z"/><path d="M15 23q8-4 17 0t17 0" stroke="#438a9b"/></svg>',jar:'🥫',bottle:'🍶',sand:'🏖️',leaves:'🍂'};
   function readSaved(){try{return cleanAnswers(JSON.parse(localStorage.getItem(storageKey)),STATIONS);}catch{return {};}}
   function persist(){if(mode==='demo'){demoAnswers={...answers};return;}try{localStorage.setItem(storageKey,JSON.stringify(answers));}catch{$('announcement').textContent='Il browser non permette di salvare i progressi. Puoi continuare a giocare in questa pagina.';}}
   function view(name){for(const id of ['home','play','results']) $(id).hidden=id!==name;window.scrollTo(0,0);}

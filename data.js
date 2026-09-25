@@ -43,12 +43,12 @@
   {
     "id": 229,
     "code": "05",
-    "name": "L’annaffiatoio dimenticato",
-    "icon": "can",
-    "scene": "Un annaffiatoio aperto con acqua ferma da diversi giorni.",
+    "name": "Il bicchiere pieno d’acqua",
+    "icon": "watercup",
+    "scene": "Un bicchiere pieno d’acqua, aperto e lasciato all’aperto con acqua ferma da diversi giorni.",
     "risk": true,
-    "fact": "L’acqua residua in un annaffiatoio accessibile alle zanzare può consentire lo sviluppo delle larve.",
-    "action": "Dopo l’uso svuotalo completamente e conservalo al riparo dalla pioggia."
+    "fact": "Anche un bicchiere può essere un potenziale focolaio: l’acqua ferma e accessibile alle zanzare può consentire lo sviluppo delle larve.",
+    "action": "Svuota e pulisci il bicchiere, poi riponilo al coperto. Non lasciare contenitori con acqua stagnante all’aperto."
   },
   {
     "id": 201,
